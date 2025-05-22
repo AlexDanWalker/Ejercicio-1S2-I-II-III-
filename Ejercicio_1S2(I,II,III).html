@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ejercicios Integrados - One Piece</title>
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<header>
+    <h1>Bienvenido a mi sitio web de One Piece</h1>
+
+    <!-- Navegación principal con iconos -->
+    <nav aria-label="Menú principal">
+        <ul style="list-style: none; padding: 0; display: flex; gap: 20px; align-items: center; margin: 0;">
+            <li><a href="#inicio" style="text-decoration:none; color: black;">Inicio</a></li>
+            <li><a href="#video" style="text-decoration:none; color: black;">
+                <i class="fas fa-play-circle" aria-hidden="true"></i> Video
+            </a></li>
+            <li><a href="#formulario" style="text-decoration:none; color: black;">
+                <i class="fas fa-envelope" aria-hidden="true"></i> Contacto
+            </a></li>
+            <li><a href="#mapa" style="text-decoration:none; color: black;">
+                <i class="fas fa-map" aria-hidden="true"></i> Mapa
+            </a></li>
+            <li><a href="#horario" style="text-decoration:none; color: black;">
+                <i class="fas fa-calendar-alt" aria-hidden="true"></i> Horario
+            </a></li>
+            <li><a href="#blog" style="text-decoration:none; color: black;">Blog</a></li>
+            <li><a href="#acerca" style="text-decoration:none; color: black;">
+                <i class="fas fa-info-circle" aria-hidden="true"></i> Acerca de
+            </a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section id="inicio" tabindex="-1">
+        <h2>Inicio</h2>
+        <p>Bienvenido a este sitio temático de One Piece donde combinamos multimedia, tablas, formularios y más.</p>
+    </section>
+
+    <section id="video" tabindex="-1">
+        <article>
+            <h2>Video de One Piece</h2>
+            <p>Video de Luffy peleando contra Kaido para liberar Wano</p>
+            <iframe width="715" height="402" src="https://www.youtube.com/embed/gr8reTtElqc" title="Luffy Gear 5 vs Kaido | One Piece" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>   
+        </article>
+    </section>
+
+    <section id="formulario" tabindex="-1">
+        <article>
+            <h2>Formulario de contacto</h2>
+            <p>Si necesitas alguna informacion adicional ¡ponte en contacto con nosotros nakama!</p>
+            <form action="#" method="post" aria-label="Formulario de contacto">
+                <label for="nombre">Nombre:</label><br />
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required /><br /><br />
+
+                <label for="email">Email:</label><br />
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required /><br /><br />
+
+                <label for="edad">Edad:</label><br />
+                <input type="number" id="edad" name="edad" placeholder="Tu edad" required min="1" max="120" /><br /><br />
+
+                <label for="mensaje">Mensaje:</label><br />
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Aquí va lo que vayas a escribirnos, Nakama." required></textarea><br /><br />
+
+                <input type="submit" value="Enviar" />
+            </form>
+        </article>
+    </section>
+
+    <section id="mapa" tabindex="-1">
+        <article>
+            <h2>Mapa de Imagen</h2>
+            <p>Haz clic en la imagen para ver más sobre Luffy.</p>
+            <figure>
+                    <img src="https://i.imgur.com/8620BoX.jpeg" alt="Cartel Se Busca de Luffy" usemap="#mapa-luffy" width="200" />
+                    <figcaption>Haz clic en el cartel para ver más sobre Luffy.</figcaption>
+
+                    <map name="mapa-luffy">
+                    <area shape="rect" coords="58,30,145,124" href="https://onepiece.fandom.com/wiki/Monkey_D._Luffy" alt="Monkey D. Luffy" target="_blank" />
+                    </map>
+            </figure>
+        </article>
+    </section>
+
+    <section id="horario" tabindex="-1">
+        <article>
+            <h2>Horario Temático de One Piece</h2>
+            <table border="1" style="border-collapse: collapse; width: 100%; background-color: #f9f9f9;" aria-label="Horario de actividades temáticas de One Piece">
+                <caption style="font-weight: bold; font-size: 1.2em; margin: 10px;">Horario de la Semana - Entrenamiento Pirata</caption>
+                <thead>
+                    <tr>
+                        <th style="border: 1px solid #333; padding: 8px; background-color: #ddd;">Hora</th>
+                        <th style="border: 1px solid #333; padding: 8px; background-color: #ddd;">Lunes</th>
+                        <th style="border: 1px solid #333; padding: 8px; background-color: #ddd;">Martes</th>
+                        <th style="border: 1px solid #333; padding: 8px; background-color: #ddd;">Miércoles</th>
+                        <th style="border: 1px solid #333; padding: 8px; background-color: #ddd;">Jueves</th>
+                        <th style="border: 1px solid #333; padding: 8px; background-color: #ddd;">Viernes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td style="border: 1px solid #333; padding: 8px;">06:00 - 07:00</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Entrenamiento con Zoro</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Entrenamiento con Zoro</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Entrenamiento con Zoro</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Misiones con Luffy</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Misiones con Luffy</td>
+                    </tr>
+                    <tr><td style="border: 1px solid #333; padding: 8px;">07:00 - 08:00</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Entrenamiento con Zoro</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Entrenamiento con Zoro</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Entrenamiento con Zoro</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Misiones con Luffy</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Misiones con Luffy</td>
+                    </tr>
+                    <tr><td style="border: 1px solid #333; padding: 8px;">08:00 - 09:00</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Clases de Navegación con Nami</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Clases de Navegación con Nami</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Clases de Navegación con Nami</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Recetas con Sanji</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Recetas con Sanji</td>
+                    </tr>
+                    <tr><td style="border: 1px solid #333; padding: 8px;">09:00 - 10:00</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Clases de Navegación con Nami</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Clases de Navegación con Nami</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Clases de Navegación con Nami</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Recetas con Sanji</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Recetas con Sanji</td>
+                    </tr>
+                    <tr><td style="border: 1px solid #333; padding: 8px;">10:00 - 11:00</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Exploración con Usopp</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Exploración con Usopp</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Exploración con Usopp</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Misiones con Luffy</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Misiones con Luffy</td>
+                    </tr>
+                    <tr><td style="border: 1px solid #333; padding: 8px;">11:00 - 12:00</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Exploración con Usopp</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Exploración con Usopp</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Exploración con Usopp</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Misiones con Luffy</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Misiones con Luffy</td>
+                    </tr>
+                    <tr><td style="border: 1px solid #333; padding: 8px;">12:00 - 13:00</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Charlas con Robin</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Charlas con Robin</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Charlas con Robin</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Misiones con Luffy</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Misiones con Luffy</td>
+                    </tr>
+                    <tr><td style="border: 1px solid #333; padding: 8px;">13:00 - 14:00</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Charlas con Robin</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Charlas con Robin</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Charlas con Robin</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Misiones con Luffy</td>
+                        <td style="border: 1px solid #333; padding: 8px;">Misiones con Luffy</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Temas del horario</h3>
+            <ul>
+                <li>Entrenamiento
+                    <ul>
+                        <li>Luffy: Técnica de Gomu Gomu</li>
+                        <li>Zoro: Técnicas de espada</li>
+                        <li>Nami: Navegación y Clima</li>
+                    </ul>
+                </li>
+                <li>Estrategias
+                    <ul>
+                        <li>Robin: Historia y Poneglyphs</li>
+                        <li>Sanji: Cocina y Combate</li>
+                    </ul>
+                </li>
+                <li>Exploración y Aventura
+                    <ul>
+                        <li>Exploración con Usopp</li>
+                        <li>Islas misteriosas</li>
+                        <li>Grand Line y Nuevo Mundo</li>
+                    </ul>
+                </li>
+                <li>Lectura capítulos
+                    <ul>
+                        <li>Arcos principales</li>
+                        <li>Personajes destacados</li>
+                    </ul>
+                </li>
+            </ul>
+        </article>
+    </section>
+
+    <section id="blog" tabindex="-1">
+        <article>
+            <h2>Blog de One Piece</h2>
+            <blockquote cite="https://onepiece.fandom.com/wiki/Monkey_D._Luffy">
+                <p><em>"¡Seré el Rey de los Piratas!"</em></p>
+                <footer>— <strong>Monkey D. Luffy</strong>, protagonista de One Piece</footer>
+            </blockquote>
+            <p>Descubre curiosidades, teorías y análisis de One Piece en nuestro blog.</p>
+        </article>
+    </section>
+
+    <section id="acerca" tabindex="-1">
+        <article>
+            <h2>Acerca de</h2>
+            <p>Este sitio es un ejercicio que integra varias técnicas HTML y contenido temático de One Piece.</p>
+            <p>Fue creado como parte de una práctica para combinar videos, formularios, mapas de imagen, tablas accesibles, listas anidadas y navegación con iconos.</p>
+            <p>El objetivo es ofrecer contenido interesante y accesible para fans de One Piece.</p>
+        </article>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2025 Mi sitio temático One Piece</p>
+</footer>
+
+</body>
+</html>
