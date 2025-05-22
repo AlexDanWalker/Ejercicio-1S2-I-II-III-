@@ -33,7 +33,7 @@ El sitio web incluye:
 ## Cómo usar
 
 1. Clona o descarga el repositorio.
-2. Abre el archivo `ejercicio_1S2(I,II,III).html` en cualquier navegador moderno.
+2. Abre el archivo `Ejercicio_1S2(I,II,III).html` en cualquier navegador moderno.
 3. Navega por las secciones usando el menú principal con iconos.
 4. Prueba el formulario de contacto (sin funcionalidad real de envío).
 5. Explora el mapa de imagen haciendo clic en el cartel.
